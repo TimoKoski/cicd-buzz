@@ -8,6 +8,7 @@ buzz = (
     , 'continuous deployment'
     , 'continuous improvement'
     , 'devops'
+    , 'test automation' # added by AY 7.11.2018
     )
 adjectives = (
     'complete'
