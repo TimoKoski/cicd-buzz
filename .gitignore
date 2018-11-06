@@ -1,3 +1,5 @@
 venv
 buzz/__pycache__
 tests/__pycache__
+.vscode/
+Dockerfile
