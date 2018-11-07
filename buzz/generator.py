@@ -32,7 +32,7 @@ verbs = (
     , 'revamps'
     , 'boosts'
     , 'optimises' # added by AY 7.11.2018
-    ' 'perfects' # added by AY 7.11.2018
+    , 'perfects' # added by AY 7.11.2018
     )
 
 def sample(l, n = 1):
