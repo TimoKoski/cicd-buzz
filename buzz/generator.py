@@ -24,6 +24,7 @@ adverbs = (
     , 'significantly'
     , 'seriously'
     , 'hugely'  # added by AY 7.11.2018
+    , 'tangibly' # added by AY 9.11.2018
     )
 verbs = (
     'accelerates'
