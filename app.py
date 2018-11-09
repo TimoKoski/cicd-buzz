@@ -12,12 +12,21 @@ signal.signal(signal.SIGINT, lambda s, f: os._exit(0))
 @app.route("/")
 def generate_buzz():
     page = '<!DOCTYPE html>'
-    page += '<html><body>'
+    page += '<html>'
+    
+    page += '<head>'
+    page += '<meta charset="utf-8">'
     page += '<meta name="viewport" content="width=device-width, initial-scale=1">'
+    page += '<title>DevOps Buzz Generator</title>'
+    page += '</head>'
+    
+    page += '<body>'
     page += '<p>{}</p>'.format(str(datetime.datetime.now()))
     page += '<p>platform.node(): {}</p>'.format(platform.node())
     page += '<h1>{}</h1>'.format(generator.generate_buzz())
-    page += '</body></html>'
+    page += '</body>'
+    
+    page += '</html>'
     return page
 
 if __name__ == "__main__":
