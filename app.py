@@ -11,7 +11,9 @@ signal.signal(signal.SIGINT, lambda s, f: os._exit(0))
 
 @app.route("/")
 def generate_buzz():
-    page = '<html><body>'
+    page = '<!DOCTYPE html>'
+    page += '<html><body>'
+    page += '<meta name="viewport" content="width=device-width, initial-scale=1">'
     page += '<p>{}</p>'.format(str(datetime.datetime.now()))
     page += '<p>platform.node(): {}</p>'.format(platform.node())
     page += '<h1>{}</h1>'.format(generator.generate_buzz())
