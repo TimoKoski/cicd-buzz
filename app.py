@@ -1,5 +1,7 @@
 import os
 import signal
+import platform
+import datetime
 from flask import Flask
 from buzz import generator
 
@@ -9,9 +11,11 @@ signal.signal(signal.SIGINT, lambda s, f: os._exit(0))
 
 @app.route("/")
 def generate_buzz():
-    page = '<html><body><h1>'
-    page += generator.generate_buzz()
-    page += '</h1></body></html>'
+    page = '<html><body>'
+    page += '<p>{}</p>'.format(str(datetime.datetime.now()))
+    page += '<p>platform.node(): {}</p>'.format(platform.node())
+    page += '<h1>{}</h1>'.format(generator.generate_buzz())
+    page += '</body></html>'
     return page
 
 if __name__ == "__main__":
