@@ -24,6 +24,10 @@ def generate_buzz():
     page += '<p>{}</p>'.format(str(datetime.datetime.now()))
     page += '<p>platform.node(): {}</p>'.format(platform.node())
     page += '<h1>{}</h1>'.format(generator.generate_buzz())
+    page += '<h1>{}</h1>'.format(generator.generate_buzz())
+    page += '<h1>{}</h1>'.format(generator.generate_buzz())
+    page += '<h1>{}</h1>'.format(generator.generate_buzz())
+    page += '<h1>{}</h1>'.format(generator.generate_buzz())
     page += '</body>'
     
     page += '</html>'

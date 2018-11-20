@@ -16,6 +16,7 @@ adjectives = (
     , 'self-service'
     , 'integrated'
     , 'end-to-end'
+    , 'contemporary' # added by AY 20.11.2018 (Koski Timo O)
     )
 adverbs = (
     'remarkably'
